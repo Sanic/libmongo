@@ -25,7 +25,7 @@
 #define MONGOC_USER_SET_LDFLAGS ""
 
 /* MONGOC_CC is used to determine what C compiler was used to compile mongoc */
-#define MONGOC_CC "/usr/bin/clang"
+#define MONGOC_CC "/usr/bin/cc"
 
 /*
  * MONGOC_ENABLE_SSL_SECURE_CHANNEL is set from configure to determine if we are
@@ -300,7 +300,7 @@
  * Set if we have snappy compression support
  *
  */
-#define MONGOC_ENABLE_COMPRESSION_SNAPPY 1
+#define MONGOC_ENABLE_COMPRESSION_SNAPPY 0
 
 #if MONGOC_ENABLE_COMPRESSION_SNAPPY != 1
 #  undef MONGOC_ENABLE_COMPRESSION_SNAPPY
